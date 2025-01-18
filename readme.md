@@ -1,5 +1,5 @@
 <p align="center">
-<img width="150" height="150" src="https://github.com/done-super-app/cereal/blob/main/assets/cereallogo.svg" alt="Cereal package logo"/>
+<img width="150" height="150" src="https://github.com/DoneSuperApp/cereal/blob/main/assets/cereallogo.svg" alt="Cereal package logo"/>
 <br><b>Cereal</b>
 </p>
 
