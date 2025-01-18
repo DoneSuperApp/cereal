@@ -1,0 +1,51 @@
+{
+    "name": "done-super-app/cereal",
+    "description": "A package to simplify serialization management.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Younes Rafie",
+            "email": "younes@done.ma"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DoneSuperApp\\Cereal\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "laravel/framework": ">=7",
+        "pestphp/pest": "^1",
+        "phpstan/phpstan": "^1.10",
+        "rector/rector": "^0.18.3"
+    },
+    "scripts": {
+        "refactor": "rector",
+        "test:refactor": "rector --dry-run",
+        "test:types": "phpstan analyse --ansi",
+        "test:unit": "pest --colors=always",
+        "test": [
+            "@test:refactor",
+            "@test:types",
+            "@test:unit"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
